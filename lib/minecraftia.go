@@ -4,7 +4,7 @@
 //  X   X     X     X   X   X       X   X   X       X   X    X        X       X     X   X
 //  X   X     X     X   X    XXXX    XXX    X        XXXX    X         X      X      XXXX
 
-package rgbmatrix
+package lib
 
 import "github.com/pbnjay/pixfont"
 
