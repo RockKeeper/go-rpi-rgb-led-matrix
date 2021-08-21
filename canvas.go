@@ -1,7 +1,7 @@
 package rgbmatrix
 
 import (
-	"github.com/pbnjay/pixfont"
+	"gopkg.in/RockKeeper/go-rpi-rgb-led-matrix.v1/lib"
 	"image"
 	"image/color"
 	"image/draw"
@@ -55,7 +55,7 @@ func (c *Canvas) Set(x, y int, color color.Color) {
 func (c *Canvas) DrawText(x, y int, text string, col color.RGBA) {
 	img := image.NewRGBA(image.Rect(0, 0, 64, 64))
 
-	pixfont.DrawString(img, x, y, text, col)
+	lib.Font.DrawString(img, x, y, text, col)
 	draw.Draw(c, c.Bounds(), img, image.Point{}, draw.Over)
 	//c.Render()
 }
